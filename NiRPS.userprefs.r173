@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Constants.js">
+    <Files>
+      <File FileName="Assets\Scripts\Attack.js" Line="111" Column="25" />
+      <File FileName="Assets\Scripts\GameController.js" Line="79" Column="38" />
+      <File FileName="Assets\Scripts\TeamSelector.js" Line="318" Column="19" />
+      <File FileName="Assets\Scripts\Movement.js" Line="134" Column="2" />
+      <File FileName="Assets\Scripts\PathingManager.js" Line="1607" Column="4" />
+      <File FileName="Assets\Scripts\NetworkController.js" Line="150" Column="5" />
+      <File FileName="Assets\Scripts\Unit.js" Line="39" Column="10" />
+      <File FileName="Assets\Scripts\Capture.js" Line="15" Column="29" />
+      <File FileName="Assets\Scripts\AnnouncerManager.js" Line="29" Column="16" />
+      <File FileName="Assets\Scripts\TeamController.js" Line="66" Column="38" />
+      <File FileName="Assets\Scripts\Class.js" Line="29" Column="30" />
+      <File FileName="Assets\Scripts\Constants.js" Line="26" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

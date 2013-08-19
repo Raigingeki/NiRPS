@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BoundaryBox.js">
+    <Files>
+      <File FileName="Assets\Scripts\PathingManager.js" Line="27" Column="20" />
+      <File FileName="Assets\Scripts\Movement.js" Line="36" Column="2" />
+      <File FileName="Assets\Scripts\BoundaryBox.js" Line="49" Column="3" />
+      <File FileName="Assets\Scripts\TeamSelector.js" Line="114" Column="73" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

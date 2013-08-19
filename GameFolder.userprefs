@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUIController.js">
+    <Files>
+      <File FileName="Assets\Models\Characters\Boss\bossAnimController.js" Line="41" Column="17" />
+      <File FileName="Assets\Scripts\GameController.js" Line="63" Column="27" />
+      <File FileName="Assets\Scripts\Unit.js" Line="31" Column="3" />
+      <File FileName="Assets\Models\Characters\Props\shruiken.js" Line="1" Column="1" />
+      <File FileName="Assets\Models\Characters\Ninja\geishaAnimController.js" Line="98" Column="104" />
+      <File FileName="Assets\Scripts\MenuController.js" Line="15" Column="29" />
+      <File FileName="Assets\Scripts\GUIController.js" Line="317" Column="2" />
+      <File FileName="Assets\Scripts\TeamSelector.js" Line="174" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
