@@ -77,6 +77,9 @@ var teamHelp : Texture;
 var moveHelp : Texture;
 var mapHelp : Texture;
 
+//Connection Image
+var loadingScreen : Texture;
+
 function Start () {
 
 	//Instantiations
@@ -566,7 +569,7 @@ function OnGUI () {
 				}
 				*/
 				//Quit Button
-				if (GUI.Button (Rect ((Screen.width/2)-((Screen.width/5)/2),(Screen.height/4)+5,(Screen.width/5),50), "Quit", robotGuiStyle)) {
+				if (GUI.Button (Rect ((Screen.width/2)-((Screen.width/5)/2),(Screen.height)+5,(Screen.width/5),50), "Quit", robotGuiStyle)) {
 			 		Application.LoadLevel (1);
 			 		ingameMenu = false;
 			 		audio.PlayOneShot(click);
@@ -577,6 +580,31 @@ function OnGUI () {
 				}
 		}//endnested
 	}//endif
+	
+	if(currentMenu == "WAITING") {
+		GUI.Box (Rect (0,0,Screen.width,Screen.height), loadingScreen);
+		
+		if(GUI.Button (Rect (5,20,100,20), "Back", robotGuiStyle)) {
+			audio.PlayOneShot(click);
+			clientWindow = false;
+			playMenu = true;
+			currentMenu = "Main";
+			hostIPAddress = "";
+			for(var n = 0; n < 7; n++){
+				teamRoster[n] = null;
+			}
+		}
+		
+		if(GameObject.Find("NetworkControlObject").GetComponent(NetworkController).connected) {
+			currentMenu = "PLAYING";
+			audio.Stop();
+			audio.PlayOneShot(click);
+			Application.LoadLevel(2);
+			//GameObject.Find("TeamControlObject").GetComponent(TeamController).CreateTeam(GameObject.Find("NetworkControlObject").GetComponent(NetworkController).host);
+			////GameObject.Find("GameControlObject").GetComponent(GameController).gameStart = true;
+			//GameObject.Find("NetworkControlObject").GetComponent(NetworkController).ready = true;
+		}
+	}
 }
 
 function GetConnectionInfo() {
@@ -594,10 +622,10 @@ function DoClientWindow(windowID : int) {
 		GameObject.Find("NetworkControlObject").GetComponent(NetworkController).ConnectAsClient(hostIPAddress);
 		clientWindow = false;
 		playMenu = false;
-		currentMenu = "PLAYING";
-		audio.Stop();
+		currentMenu = "WAITING";
+		/*audio.Stop();
 		audio.PlayOneShot(click);
-		Application.LoadLevel (2);
+		Application.LoadLevel (2);*/
 	}
 	
 	
@@ -622,10 +650,10 @@ function DoHostWindow(windowID : int) {
 		GameObject.Find("NetworkControlObject").GetComponent(NetworkController).ConnectAsHost(true);
 		hostWindow = false;
 		playMenu = false;
-		currentMenu = "PLAYING";
-		audio.Stop();
+		currentMenu = "WAITING";
+		/*audio.Stop();
 		audio.PlayOneShot(click);
-		Application.LoadLevel (2);
+		Application.LoadLevel (2);*/
 	}
 	
 	
@@ -639,6 +667,17 @@ function DoHostWindow(windowID : int) {
 		}
 	}
 	
+}
+
+function DoConnectionWait(windowID : int) {
+	while(Network.connections.Length != 2) {
+		//display art
+	}
+	
+	currentMenu = "PLAYING";
+	audio.Stop();
+	audio.PlayOneShot(click);
+	Application.LoadLevel(2);
 }
 
 //DoTeamMenu

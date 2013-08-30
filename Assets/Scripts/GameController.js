@@ -29,6 +29,11 @@ function Start () {
 	timeRemaining = SETUP_TIME;
 	isGameOver = false;	
 	bossHealthTrigger = false;
+	
+	GameObject.Find("TeamControlObject").GetComponent(TeamController).CreateTeam(GameObject.Find("NetworkControlObject").GetComponent(NetworkController).host);
+	GameObject.Find("NetworkControlObject").GetComponent(NetworkController).ready = true;
+	gameStart = true;
+	
 }
 
 function Update () {

@@ -1,17 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Attack.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MenuController.js">
     <Files>
-      <File FileName="Assets\Scripts\GameController.js" Line="155" Column="8" />
-      <File FileName="Assets\Scripts\TeamSelector.js" Line="258" Column="82" />
-      <File FileName="Assets\Scripts\BOSS_LOGIC.js" Line="113" Column="2" />
-      <File FileName="Assets\Scripts\Attack.js" Line="130" Column="26" />
-      <File FileName="Assets\Scripts\Class.js" Line="25" Column="29" />
-      <File FileName="Assets\Scripts\Unit.js" Line="9" Column="33" />
-      <File FileName="Assets\Scripts\Capture.js" Line="16" Column="1" />
-      <File FileName="Assets\Scripts\Turret.js" Line="3" Column="32" />
-      <File FileName="Assets\Scripts\AnnouncerManager.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TeamController.js" Line="63" Column="18" />
+      <File FileName="Assets\Scripts\NetworkController.js" Line="72" Column="4" />
+      <File FileName="Assets\Scripts\MenuController.js" Line="605" Column="6" />
+      <File FileName="Assets\Scripts\GameController.js" Line="34" Column="87" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

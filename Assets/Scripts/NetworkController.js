@@ -4,6 +4,7 @@ var playerCount:int = 0;
 
 var host:boolean = false;
 var hostIP:String = "";
+var connected:boolean = false;
 
 static var ready:boolean;
 
@@ -50,12 +51,13 @@ function OnPlayerConnected(player:NetworkPlayer) {
 
 	Debug.Log("Player " + playerCount++ + " connected from " + player.ipAddress + ":" + player.port);
 	//Application.LoadLevel (2);
-	GameObject.Find("TeamControlObject").GetComponent(TeamController).CreateTeam(true);
-	GameObject.Find("GameControlObject").GetComponent(GameController).gameStart = true;
+	//GameObject.Find("TeamControlObject").GetComponent(TeamController).CreateTeam(true);
+	//GameObject.Find("GameControlObject").GetComponent(GameController).gameStart = true;
 	//GameObject.Find("TeamControlObject").networkView.RPC("CreateTeam",RPCMode.AllBuffered,false);
 	
 	//fire the boss cannon
-	ready = true;
+	//ready = true;
+	connected = true;
 	Debug.Log("WE READY GOGOGO");
 	
 }
@@ -63,11 +65,12 @@ function OnPlayerConnected(player:NetworkPlayer) {
 function OnConnectedToServer() {
 	Debug.Log("Connected to Server");
 	//Application.LoadLevel (2);
-	GameObject.Find("TeamControlObject").GetComponent(TeamController).CreateTeam(false);
-	GameObject.Find("GameControlObject").GetComponent(GameController).gameStart = true;
+	//GameObject.Find("TeamControlObject").GetComponent(TeamController).CreateTeam(false);
+	//GameObject.Find("GameControlObject").GetComponent(GameController).gameStart = true;
 	
 	//fire the boss cannon
-	ready = true;
+	//ready = true;
+	connected = true;
 	Debug.Log("WE READY GOGOGO");
 }
 
